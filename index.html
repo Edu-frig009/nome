@@ -1,21 +1,43 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meus objetivos do ano</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Objetivos</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Meus Objetivos</h1>
+            <p>Clique em uma área para ver os objetivos</p>
+        </header>
 
-  <body>
-    <section class="conteudo-principal">
-      <h2 class="titulo-principal">Meus Objetivos do ano<span>_</span></h2>
-      <div class="botoes">
-        <button class="botao">Cursos na Alura</button>
-        <button class="botao">Criar projetos em Javascript</button>
-        <button class="botao">Criar um portfolio</button>
-        <button class="botao">Atualizar meu currículo</button>
-      </div>
-    </section>
-  </body>
+        <main class="grid">
+            <a href="objetivos-pessoais.html" class="card card-pessoal">
+                <div class="icone">🌟</div>
+                <h2>Pessoais</h2>
+                <p>Crescimento e bem-estar</p>
+            </a>
+
+            <a href="objetivos-profissionais.html" class="card card-profissional">
+                <div class="icone">💼</div>
+                <h2>Profissionais</h2>
+                <p>Carreira e desenvolvimento</p>
+            </a>
+
+            <a href="objetivos-saude.html" class="card card-saude">
+                <div class="icone">💪</div>
+                <h2>Saúde</h2>
+                <p>Corpo e mente</p>
+            </a>
+
+            <a href="objetivos-financeiros.html" class="card card-financeiro">
+                <div class="icone">💰</div>
+                <h2>Financeiros</h2>
+                <p>Organização e riqueza</p>
+            </a>
+        </main>
+    </div>
+</body>
 </html>
