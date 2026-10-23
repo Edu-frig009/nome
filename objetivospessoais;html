@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetivos Pessoais</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container pagina-objetivos">
+        <a href="index.html" class="voltar">← Voltar</a>
+        
+        <h1>🌟 Objetivos Pessoais</h1>
+        <p class="subtitulo">Crescimento pessoal e bem-estar emocional</p>
+
+        <ul class="lista-objetivos">
+            <li>
+                <span class="numero">1</span>
+                <div class="conteudo">
+                    <h3>Ler 12 livros no ano</h3>
+                    <p>Um livro por mês, misturando ficção e não-ficção.</p>
+                </div>
+            </li>
+            <li>
+                <span class="numero">2</span>
+                <div class="conteudo">
+                    <h3>Meditar 10 minutos por dia</h3>
+                    <p>Praticar mindfulness todas as manhãs.</p>
+                </div>
+            </li>
+            <li>
+                <span class="numero">3</span>
+                <div class="conteudo">
+                    <h3>Aprender um novo idioma</h3>
+                    <p>Chegar ao nível intermediário em espanhol ou francês.</p>
+                </div>
+            </li>
+            <li>
+                <span class="numero">4</span>
+                <div class="conteudo">
+                    <h3>Escrever um diário</h3>
+                    <p>Registrar reflexões e gratidão pelo menos 3 vezes por semana.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
