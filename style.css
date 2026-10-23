@@ -1,200 +1,131 @@
-@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+    --cor-de-fundo: #1E1E1E;
+    --verde: #6FFF57;
+    --branco: #FFFFFF;
+    --botao-ativo: #3A375E;
+    --botao-inativo: rgba(58, 55, 94, 0.5);
+    --texto-fundo: rgba(58, 55, 94, 0.3);
 }
 
 body {
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-    min-height: 100vh;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    font-family: 'Chakra Petch', sans-serif;
 }
 
-.container {
-    max-width: 1000px;
-    width: 100%;
-}
 
-header {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-header h1 {
-    font-size: 2.8rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-    background: linear-gradient(90deg, #a18cd1, #fbc2eb);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-header p {
-    font-size: 1.15rem;
-    opacity: 0.8;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-}
-
-.card {
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 20px;
-    padding: 40px 30px;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
+.conteudo-principal {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    min-height: 220px;
     justify-content: center;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-    border-color: rgba(255, 255, 255, 0.25);
-}
-
-.icone {
-    font-size: 3.2rem;
-    margin-bottom: 5px;
-}
-
-.card h2 {
-    font-size: 1.6rem;
-    font-weight: 600;
-}
-
-.card p {
-    font-size: 0.95rem;
-    opacity: 0.75;
-}
-
-/* Cores diferentes por card */
-.card-pessoal:hover {
-    background: linear-gradient(145deg, rgba(161, 140, 209, 0.25), rgba(251, 194, 235, 0.15));
-}
-
-.card-profissional:hover {
-    background: linear-gradient(145deg, rgba(100, 149, 237, 0.25), rgba(70, 130, 180, 0.15));
-}
-
-.card-saude:hover {
-    background: linear-gradient(145deg, rgba(72, 187, 120, 0.25), rgba(56, 178, 172, 0.15));
-}
-
-.card-financeiro:hover {
-    background: linear-gradient(145deg, rgba(246, 173, 85, 0.25), rgba(237, 137, 54, 0.15));
-}
-
-/* Página de objetivos */
-.pagina-objetivos {
-    max-width: 800px;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
 
-.voltar {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    color: #a18cd1;
-    text-decoration: none;
-    font-weight: 500;
-    margin-bottom: 30px;
-    transition: color 0.2s;
+.titulo-principal {
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
 }
 
-.voltar:hover {
-    color: #fbc2eb;
+.titulo-principal span {
+    color: var(--verde);
 }
 
-.pagina-objetivos h1 {
-    font-size: 2.4rem;
-    margin-bottom: 10px;
-}
 
-.pagina-objetivos .subtitulo {
-    opacity: 0.75;
-    margin-bottom: 40px;
-    font-size: 1.1rem;
-}
-
-.lista-objetivos {
-    list-style: none;
+.botao {
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
     display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-
-.lista-objetivos li {
-    background: rgba(255, 255, 255, 0.07);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 14px;
-    padding: 20px 24px;
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    transition: background 0.2s;
-}
-
-.lista-objetivos li:hover {
-    background: rgba(255, 255, 255, 0.12);
-}
-
-.lista-objetivos .numero {
-    background: rgba(161, 140, 209, 0.3);
-    color: #fbc2eb;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    font-weight: 700;
-    font-size: 0.9rem;
-    flex-shrink: 0;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
 }
 
-.lista-objetivos .conteudo h3 {
-    font-size: 1.15rem;
-    margin-bottom: 4px;
+.botao:first-child {
+    border-radius: 40px 40px 0 0;
 }
 
-.lista-objetivos .conteudo p {
-    font-size: 0.95rem;
-    opacity: 0.75;
-    line-height: 1.4;
+.botoes {
+    display: block;
 }
 
-/* Responsivo */
-@media (max-width: 600px) {
-    .grid {
-        grid-template-columns: 1fr;
+.botao.ativo {
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
+}
+
+.abas-textos {
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+
+.aba-conteudo.ativo {
+    display: block;
+}
+
+.aba-conteudo {
+    display: none;
+}
+
+.aba-conteudo-titulo-principal {
+    font-size: 28px;
+    text-align: center;
+}
+
+.aba-conteudo-titulo-secundario {
+    text-align: center;
+    color: var(--verde);
+    text-transform: uppercase;
+}
+
+.contador {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contador-digito {
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+}
+
+.contador-digito-numero {
+    font-size: 80px;
+    margin: 0;
+
+}
+
+.contador-digito-texto {
+    color: var(--verde);
+    font-size: 20px;
+    margin: 0;
+
+}
+
+@media screen and (min-width: 768px) {
+    .botoes {
+        display: flex;
     }
 
-    header h1 {
-        font-size: 2.1rem;
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
     }
 
-    .card {
-        min-height: 180px;
-        padding: 30px 20px;
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
     }
 }
